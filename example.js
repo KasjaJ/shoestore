@@ -135,3 +135,13 @@ $(document.getElementById('price')).click(function( event ) {
   
   $(document.querySelectorAll('[data-category="flipflop"]')).style.order = "1"; }); 
 */
+
+
+
+// search funkcija koja radi za sve, filtrira prema imenu, nadimku, cijeni, sve.
+$(".search").on("keyup", function() {
+  var value = $(this).val().toLowerCase();
+  $(".shoeLabel").filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  });
+});
