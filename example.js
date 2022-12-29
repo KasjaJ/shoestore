@@ -7,7 +7,7 @@ var shoes = document.querySelectorAll('.shoeLabel');
  // ovdje je napravljen pravi array od nodeliste
 var shoesArray = Array.from(shoes);
  
-
+var drop = document.querySelectorAll('#drop');
 
 
 
@@ -30,19 +30,15 @@ slider.oninput = function() {
       // console.log('objects that cost less or equal to $' + this.value);
 };
 
-// const sortedByPrice = shoes;
+
 
 sortByPrice.onclick = function() {
   console.log(shoesArray);
-
   shoesArray.forEach(function (shoe) {
     price = shoe.dataset.price;
     size = shoe.dataset.size;
-
-
     console.log(shoesArray[2].price);
   });
-
 
 };
 
@@ -97,24 +93,6 @@ jQuery(document).ready(function($){
 
 
 
-
-
-// NE REGISTRUJE BROJEVE NI KAO LISTU NI NISTA IAKO SU TU ZNACI NAVODA RAZNI pa mora biti ova JSON metoda
-// izgleda gadno i komplikovano ovako napisano, mozda poslije nekad sredim to malo
-// napravi listu od dostupnih velicina za TRECE cipele
-
-//  console.log(JSON.parse(allShoes[4].dataset.size));
-
-//  izgleda kao da nema veze kako su navedene velicine, uz dvostruke navodnike i simbole izgleda kao da parsa isto 
-
-
-
-
-
-
-
-
-
 $('button').click(function( event ) {
       
   $(shoes).hide('slow');
@@ -132,12 +110,22 @@ $('button').click(function( event ) {
 
 
 
-
-
 // show dropdown categories
-$(document.getElementById('drop')).click(function( event ) {
-  $( document.getElementsByClassName('dropdown') ).show(100);
-}); 
+$(drop).click(function( event ) {
+
+ if (drop[0].classList.contains('rotate')) {
+    $(document.getElementsByClassName('dropdown') ).hide(100);
+    $(drop[0]).toggleClass("rotate");
+    console.log('dropdown podignut'); 
+    // inace je ovo trebalo biti classList.toggle() ali iz nekog razloga je to undefined!!
+
+  } else {
+    $(document.getElementsByClassName('dropdown') ).show(100);
+    $(drop[0]).toggleClass("rotate");
+  }
+
+});
+
 
 
 /*
