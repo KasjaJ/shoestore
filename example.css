@@ -13,7 +13,6 @@ body {
 }
 
 
-
 #content {
     width: 90%;
     height: fit-content;
@@ -26,8 +25,6 @@ body {
     margin-right: auto;
     text-align: left;
     border-radius: 1.3rem;
-
-
 }
 
 
@@ -36,9 +33,7 @@ nav {
    line-height: 2.5rem;
    padding: 1%;
    border-bottom: 2px solid rgb(238, 238, 238);
-   
 }
-
 
 
 h1 {
@@ -48,7 +43,6 @@ h1 {
     position: relative;
     top: 2rem;
 }
-
 
 
 h3.price {
@@ -63,12 +57,9 @@ h3.price {
 }
 
 
-
 h4.shoe {
     margin-top: 3%;
 }
-
-
 
 
 h5 {
@@ -78,7 +69,6 @@ h5 {
 }
 
 
-
 .search {
     width: 50%;
     height: auto;
@@ -86,7 +76,6 @@ h5 {
     float: right;
     border-radius: 0.5rem;
     border: 1px solid rgb(238, 238, 238);
-
 }
 
 
@@ -94,8 +83,6 @@ h5 {
     height: auto;
     float: left;  
 }
-
-
 
 
 .slideContainer {
@@ -107,6 +94,7 @@ p#range {
     margin: 0;
 }
 
+
 #range {
     text-align: center;
 }
@@ -116,6 +104,7 @@ p#range {
     width: 100%;
 }
 
+
 #amount {
     border:0; 
     color:#f6931f; 
@@ -123,19 +112,10 @@ p#range {
 }
 
 
-
-
-
-
-
-
 #title {
     display: inline;
     padding: 1%;
-   
 }
-
-
 
 
 .price {
@@ -144,11 +124,6 @@ p#range {
     display: inline-block;
     vertical-align: text-bottom;
 }
-
-
-
-
-
 
 
 .categories {
@@ -167,9 +142,7 @@ strong {
 }
 
 
-
 span {
-  
     float: right;
   /*  width: 10%; */
     height: 10%;
@@ -177,11 +150,10 @@ span {
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(-90deg);
-    
 }
 
-span:hover {
 
+.rotate {
     cursor: pointer;
     border-radius: 1%;
     -webkit-transform: rotate(-90deg);
@@ -191,15 +163,12 @@ span:hover {
 }
 
 
-
 h3#categories {
     width: auto;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 10%;
-
 }
-
 
 
 input.dropdown {
@@ -212,14 +181,12 @@ input.dropdown {
   height: 100%;
   width: 100%;
   display: none;
-
 }
+
 
 .dropdown:hover {
     display: block;
 }
-
-
 
 
 .sizes {
@@ -239,11 +206,10 @@ input.dropdown {
     background-color: rgb(238, 238, 238);
 }
 
+
 .button:hover {
     background-color: rgb(172, 172, 172) ;
 }
-
-
 
 
 .shoes {
@@ -253,8 +219,6 @@ input.dropdown {
     gap: 1.5rem;
     flex-wrap: wrap;
 }
-
-
 
 
 .shoeLabel {
@@ -270,7 +234,6 @@ input.dropdown {
     padding: 4%;
     text-align: left;
     line-height: normal;
-  
 }
 
 
@@ -290,7 +253,3 @@ img {
     border: 2px solid rgb(238, 238, 238);
     margin: 0;
 }
-
-
-
-
